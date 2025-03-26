@@ -1,0 +1,33 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven
+target/
+.mvn/
+.idea/
+.project
+.classpath
+
+
+# IntelliJ IDEA
+.idea/
+
+# VSCode
+.vscode/
+
+# Log files
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Application-specific files
+*.iml
+
+
+# db mount
+data/
