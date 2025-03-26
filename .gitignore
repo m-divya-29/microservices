@@ -10,7 +10,7 @@ target/
 .idea/
 .project
 .classpath
-
+**/.idea/
 
 # IntelliJ IDEA
 .idea/
