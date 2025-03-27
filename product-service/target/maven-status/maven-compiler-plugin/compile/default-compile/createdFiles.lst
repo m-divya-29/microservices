@@ -1,8 +1,0 @@
-com\md29\microservices\product\dto\ProductResponseRecordDTO.class
-com\md29\microservices\product\controller\ProductController.class
-com\md29\microservices\product\dto\ProductRequestRecordDTO.class
-com\md29\microservices\product\model\Product$ProductBuilder.class
-com\md29\microservices\product\model\Product.class
-com\md29\microservices\product\service\ProductService.class
-com\md29\microservices\product\repository\IProductRepository.class
-com\md29\microservices\product\ProductServiceApplication.class
