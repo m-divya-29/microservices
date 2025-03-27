@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\codes\j\microservices\product-service\src\main\java\com\md29\microservices\product\controller\ProductController.java
 C:\codes\j\microservices\product-service\src\main\java\com\md29\microservices\product\dto\ProductRequestRecordDTO.java
 C:\codes\j\microservices\product-service\src\main\java\com\md29\microservices\product\dto\ProductResponseRecordDTO.java
@@ -5,3 +6,12 @@ C:\codes\j\microservices\product-service\src\main\java\com\md29\microservices\pr
 C:\codes\j\microservices\product-service\src\main\java\com\md29\microservices\product\ProductServiceApplication.java
 C:\codes\j\microservices\product-service\src\main\java\com\md29\microservices\product\repository\IProductRepository.java
 C:\codes\j\microservices\product-service\src\main\java\com\md29\microservices\product\service\ProductService.java
+=======
+C:\grace\microservices\product-service\src\main\java\com\md29\microservices\product\controller\ProductController.java
+C:\grace\microservices\product-service\src\main\java\com\md29\microservices\product\dto\ProductRequestRecordDTO.java
+C:\grace\microservices\product-service\src\main\java\com\md29\microservices\product\dto\ProductResponseRecordDTO.java
+C:\grace\microservices\product-service\src\main\java\com\md29\microservices\product\model\Product.java
+C:\grace\microservices\product-service\src\main\java\com\md29\microservices\product\ProductServiceApplication.java
+C:\grace\microservices\product-service\src\main\java\com\md29\microservices\product\repository\IProductRepository.java
+C:\grace\microservices\product-service\src\main\java\com\md29\microservices\product\service\ProductService.java
+>>>>>>> 0bc27e9e652116ed556e4b1bf8a7ef58b779e699
