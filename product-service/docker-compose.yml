@@ -9,5 +9,6 @@ services:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: password
       MONGO_INITDB_DATABASE: product-service
+    command: ["mongod", "--bind_ip_all"]
     volumes:
       - ./data:/data/db
