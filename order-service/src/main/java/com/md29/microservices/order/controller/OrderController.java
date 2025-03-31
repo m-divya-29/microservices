@@ -1,6 +1,7 @@
 package com.md29.microservices.order.controller;
 
 import com.md29.microservices.order.dto.OrderRequest;
+import com.md29.microservices.order.exception.ProductOutOfStockException;
 import com.md29.microservices.order.model.Order;
 import com.md29.microservices.order.service.OrderService;
 import lombok.NonNull;
@@ -19,7 +20,7 @@ public class OrderController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public String placeOrder(@RequestBody OrderRequest orderRequest) {
+    public String placeOrder(@RequestBody OrderRequest orderRequest) throws ProductOutOfStockException {
         orderService.placeOrder(orderRequest);
         return "Order placed successfully!";
     }
