@@ -1,6 +1,7 @@
 package com.md29.microservices.order;
 
 import io.restassured.RestAssured;
+import org.hamcrest.Matchers;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -28,7 +29,22 @@ class OrderServiceApplicationTests {
 
 	@Test
 	void shouldCreateOrder() {
-
+		String requestBody = """
+				{
+				     "orderNumber": "iPhone16",
+				     "skuCode": "Made for Apple Intelligence",
+				     "price": "999",
+				     "quantity": 1
+				 }
+				""";
+		RestAssured.given()
+				.contentType("application/json")
+				.body(requestBody)
+				.when()
+				.post("/api/order")
+				.then()
+				.statusCode(201)
+				.body(Matchers.equalTo("Order placed successfully!"));
 	}
 }
 
