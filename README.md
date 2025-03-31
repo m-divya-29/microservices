@@ -28,18 +28,24 @@ $env:PATH="$env:JAVA_HOME\bin;$env:PATH"
 ## Order Service
 1. Start MySQL db: from order-service\ run
    ```docker-compose up -d```
-   2. Sample REST calls:
-       * GET: http://localhost:8081/api/order
-       * POST: http://localhost:8081/api/order
-         body: 
-      ```
-      {
-          "orderNumber": "iPhone12",
-          "skuCode": "Best camera",
-          "price": "699",
-          "quantity": 2
-      }
-      ```
+2. Sample REST calls:
+    * GET: http://localhost:8081/api/order
+    * POST: http://localhost:8081/api/order
+      body: 
+   ```
+   {
+       "orderNumber": "iPhone12",
+       "skuCode": "Best camera",
+       "price": "699",
+       "quantity": 2
+   }
+   ```
+## Inventory Service
+1. Start MySQL db: from order-service\ run
+   ```docker-compose up -d```
+2. Sample REST calls:
+    * GET: http://localhost:8082/api/inventory?skuCode=iphone_15&quantity=10
+   
 ---
 ### Useful resources
 * [YT Course content](https://www.youtube.com/watch?v=yn_stY3HCr8) and  [Blog](https://programmingtechie.com/articles/spring-boot-microservices-tutorial) 
