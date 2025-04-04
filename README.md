@@ -1,7 +1,11 @@
 # Ecommerce using microservices
 # How it works
-* `Order` Service talks to `Inventory` Service synchronously: before placing an order, the service class checks inventory availability. We use `Spring cloud openfeign` to make the inter calls.
+* `Order` Service talks to `Inventory` Service synchronously: before placing an order, the service class checks inventory availability (waits for response from inventory service). We use `Spring cloud openfeign` to make the inter calls.
 
+---
+## Tech stack
+* `Spring Cloud Open Feign`: Sync-calls between services
+* `WireMock`: 
 ## Commonly faced issues
 ### Set jdk to 21 to just this project(powershell)
 ```
