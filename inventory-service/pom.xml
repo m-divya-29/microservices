@@ -82,6 +82,19 @@
             <artifactId>rest-assured</artifactId>
             <scope>test</scope>
         </dependency>
+
+		<!-- For HTML based swagger documentation -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.5.0</version>
+		</dependency>
+		<!-- For JSON based swagger documentation -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-api</artifactId>
+			<version>2.5.0</version>
+		</dependency>
     </dependencies>
 
 </project>

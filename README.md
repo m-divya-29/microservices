@@ -71,3 +71,8 @@ $env:PATH="$env:JAVA_HOME\bin;$env:PATH"
 ---
 ### Resources
 * [YT Course content](https://www.youtube.com/watch?v=yn_stY3HCr8) and  [Blog](https://programmingtechie.com/articles/spring-boot-microservices-tutorial) 
+
+
+---
+### ToDos
+* fix: swagger doesn't work for order-service.
