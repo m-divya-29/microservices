@@ -5,7 +5,13 @@
 * `KeyCloak`: Securing API Gateway
 ### How it works
 * `Order` Service talks to `Inventory` Service synchronously: before placing an order, the service class checks inventory availability (waits for response from inventory service). We use `Spring cloud openfeign` to make the inter calls.
-
+---
+### Keycloak : Generate access token
+* keycloak admin console is at:  http://localhost:8181/admin/master/console/#/spring-microservices-security-realm admin/admin
+* client ID, secret from: Clients -> <spring-microservices-security-realm> -> Client details -> Credentials
+* Access Token URL: Realm settings > General > End points >
+  OpenID Endpoint Configuration > token_endpoint's URL
+* In postman, choose OAuth 2.0 as Authorization > Grant Type: Client Credentials, Access token URL, client ID, client secret from above
 ---
 ## End Points
 ### API Gateway
