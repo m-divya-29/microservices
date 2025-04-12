@@ -1,10 +1,10 @@
 # Ecommerce using microservices
 ## Tech stack
-* `Spring Cloud Open Feign`: Sync-calls between services
+* `REST Client`: Sync-calls between services
 * `WireMock`: Mock testing intercommunicating services.
 * `KeyCloak`: Securing API Gateway
 ### How it works
-* `Order` Service talks to `Inventory` Service synchronously: before placing an order, the service class checks inventory availability (waits for response from inventory service). We use `Spring cloud openfeign` to make the inter calls.
+* `Order` Service talks to `Inventory` Service synchronously: before placing an order, the service class checks inventory availability (waits for response from inventory service). We use `REST Client` to make the inter calls.
 ---
 ### Keycloak : Generate access token
 * keycloak admin console is at:  http://localhost:8181/admin/master/console/#/spring-microservices-security-realm admin/admin
@@ -19,6 +19,7 @@
   * Product service: http://localhost:9000/api/product
   * Order service: http://localhost:9000/api/order
   * Inventory service: http://localhost:9000/api/inventory?skuCode=iphone_15&quantity=10
+  * Aggregated microservices' swagger: http://localhost:9000/swagger-ui/index.html
 ### Product Service
 1. Start Mongo db: from product-service\ run
 ```docker-compose up -d```
