@@ -3,6 +3,9 @@
 * `REST Client`: Sync-calls between services
 * `WireMock`: Mock testing intercommunicating services.
 * `KeyCloak`: Securing API Gateway
+* `Spring Cloud Circuit Breaker`: `Resilience4j` implementation to achieve circuit breaker pattern.
+  If a service keeps failing, the circuit breaker "opens" and stops further calls for a while, giving the system a chance to recover.
+
 ### How it works
 * `Order` Service talks to `Inventory` Service synchronously: before placing an order, the service class checks inventory availability (waits for response from inventory service). We use `REST Client` to make the inter calls.
 ---
@@ -20,6 +23,7 @@
   * Order service: http://localhost:9000/api/order
   * Inventory service: http://localhost:9000/api/inventory?skuCode=iphone_15&quantity=10
   * Aggregated microservices' swagger: http://localhost:9000/swagger-ui/index.html
+  * Actuator: http://localhost:9000/actuator/health
 ### Product Service
 1. Start Mongo db: from product-service\ run
 ```docker-compose up -d```
