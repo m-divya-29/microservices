@@ -25,12 +25,13 @@ public class ProductService {
         Product product = Product.builder()
                 .name(productRequestRecordDTO.name())
                 .description(productRequestRecordDTO.description())
+                .skuCode(productRequestRecordDTO.skuCode())
                 .price(productRequestRecordDTO.price())
                 .build();
 
         productRepository.save(product);
         log.info("Product saved");
-        return new ProductResponseRecordDTO(product.getId(), product.getName(), product.getDescription(), product.getPrice());
+        return new ProductResponseRecordDTO(product.getId(), product.getName(), product.getDescription(), product.getSkuCode(), product.getPrice());
     }
 
     public ProductResponseRecordDTO getProduct(String id) {
@@ -38,7 +39,7 @@ public class ProductService {
         Optional<Product> productOptional =  productRepository.findById(id);
         Product product = productOptional.get();
         if(product != null) {
-            responseRecordDTO = new ProductResponseRecordDTO(product.getId(), product.getName(), product.getDescription(), product.getPrice());
+            responseRecordDTO = new ProductResponseRecordDTO(product.getId(), product.getName(), product.getDescription(), product.getSkuCode(), product.getPrice());
         }
         return responseRecordDTO;
     }
@@ -46,6 +47,6 @@ public class ProductService {
     public List<ProductResponseRecordDTO> getAllProducts() {
         return productRepository.findAll()
                 .stream()
-                .map(product -> new ProductResponseRecordDTO(product.getId(), product.getName(), product.getDescription(), product.getPrice())).collect(Collectors.toList());
+                .map(product -> new ProductResponseRecordDTO(product.getId(), product.getName(), product.getDescription(), product.getSkuCode(), product.getPrice())).collect(Collectors.toList());
     }
 }

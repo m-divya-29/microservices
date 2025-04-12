@@ -81,3 +81,4 @@ $env:PATH="$env:JAVA_HOME\bin;$env:PATH"
 ---
 ### ToDos
 * fix: swagger doesn't work for order-service.
+* Cascade update/delete inventory and product.
