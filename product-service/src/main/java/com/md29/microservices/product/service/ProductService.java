@@ -22,6 +22,11 @@ public class ProductService {
     private final IProductRepository productRepository;
 
     public ProductResponseRecordDTO createProduct(ProductRequestRecordDTO productRequestRecordDTO) {
+        Product existingProduct = productRepository.findBySkuCode(productRequestRecordDTO.skuCode());
+        if(existingProduct != null) {
+            return new ProductResponseRecordDTO(existingProduct.getId(), existingProduct.getName(),
+                    existingProduct.getDescription(), existingProduct.getSkuCode(), existingProduct.getPrice());
+        }
         Product product = Product.builder()
                 .name(productRequestRecordDTO.name())
                 .description(productRequestRecordDTO.description())

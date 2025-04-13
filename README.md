@@ -33,9 +33,10 @@
      body:
      ```
      {
-        "name": "iPhone12",
-        "description": "Another best phone ever"
-        "price": "699"
+        "name": "Yoga Mat",
+        "description": "Non-slip yoga mat for exercise",
+        "skuCode": "FIT-YM05",
+        "price": "39"
      }
      ```
      

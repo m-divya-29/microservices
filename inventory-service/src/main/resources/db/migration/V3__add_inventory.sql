@@ -1,0 +1,17 @@
+INSERT INTO t_inventory (quantity, sku_code)
+values (100, 'SMART-W05'),
+(100, "ACC-WB09"),
+(100, "ACC-WL07"),
+(100, "AUDIO-HP08"),
+(100, "AUDIO-SP06"),
+(100, "BAG-TRV11"),
+(100, "CAM-DG31"),
+(100, "CLOTH-DJ18"),
+(100, "FIT-YM05"),
+(100, "HOME-DL27"),
+(100, "HOME-MG04"),
+(100, "HOME-TP15"),
+(100, "KNIT-SW03"),
+(100, "OUTD-GT12"),
+(100, "SHOE-RN22"),
+(100, "SMART-W05")

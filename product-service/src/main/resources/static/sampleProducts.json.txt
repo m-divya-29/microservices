@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Ceramic Coffee Mug Set",
+    "description": "Set of four stylish coffee mugs",
+    "skuCode": "HOME-MG04",
+    "price": "35"
+  },
+  {
+    "name": "Stainless Steel Water Bottle",
+    "description": "Keeps drinks cold for 24 hours",
+    "skuCode": "ACC-WB09",
+    "price": "29"
+  },
+  {
+    "name": "Cotton Linen Throw Pillow",
+    "description": "Decorative pillow for sofa or bed",
+    "skuCode": "HOME-TP15",
+    "price": "45"
+  },
+  {
+    "name": "Running Shoes",
+    "description": "Lightweight and comfortable for running",
+    "skuCode": "SHOE-RN22",
+    "price": "120"
+  },
+  {
+    "name": "Denim Jacket",
+    "description": "Classic denim jacket for all seasons",
+    "skuCode": "CLOTH-DJ18",
+    "price": "89"
+  },
+  {
+    "name": "Portable Bluetooth Speaker",
+    "description": "Waterproof speaker with long battery life",
+    "skuCode": "AUDIO-SP06",
+    "price": "59"
+  },
+  {
+    "name": "Digital Camera",
+    "description": "Compact camera with 4K video recording",
+    "skuCode": "CAM-DG31",
+    "price": "499"
+  },
+  {
+    "name": "Desk Lamp",
+    "description": "Adjustable LED desk lamp",
+    "skuCode": "HOME-DL27",
+    "price": "42"
+  },
+  {
+    "name": "Gardening Tool Set",
+    "description": "Set of essential gardening tools",
+    "skuCode": "OUTD-GT12",
+    "price": "68"
+  },
+  {
+    "name": "Yoga Mat",
+    "description": "Non-slip yoga mat for exercise",
+    "skuCode": "FIT-YM05",
+    "price": "39"
+  }
+]
