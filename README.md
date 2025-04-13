@@ -5,6 +5,9 @@
 * `KeyCloak`: Securing API Gateway
 * `Spring Cloud Circuit Breaker`: `Resilience4j` implementation to achieve circuit breaker pattern.
   If a service keeps failing, the circuit breaker "opens" and stops further calls for a while, giving the system a chance to recover.
+* `Kafka` with `Zookeeper`
+* `mailtrap.io` for sending order notification mails order-placed topic consumer. Login to mailtrap, check sent mails in: Inboxes > spring-shop-inbox.
+
 
 ### How it works
 * `Order` Service talks to `Inventory` Service synchronously: before placing an order, the service class checks inventory availability (waits for response from inventory service). We use `REST Client` to make the inter calls.
