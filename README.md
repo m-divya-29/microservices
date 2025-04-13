@@ -16,6 +16,12 @@
   OpenID Endpoint Configuration > token_endpoint's URL
 * In postman, choose OAuth 2.0 as Authorization > Grant Type: Client Credentials, Access token URL, client ID, client secret from above
 ---
+### Kafka
+* Kafka UI: http://localhost:8086/
+  * Create Kafka cluster: cluster name=localhost, bootstrap servers=broker port=29092. Validate > Submit
+  * in topics, you will see all the messages sent to order-service topic.
+
+---
 ## End Points
 ### API Gateway
 * API gateway port configured to 9000. All services go via 9000. Examples: 
@@ -83,3 +89,4 @@ $env:PATH="$env:JAVA_HOME\bin;$env:PATH"
 ### ToDos
 * fix: swagger doesn't work for order-service.
 * Cascade update/delete inventory and product.
+* UI-Place Order: Pass logged-in user email in the payload to later use in kafka messages.
