@@ -93,3 +93,4 @@ $env:PATH="$env:JAVA_HOME\bin;$env:PATH"
 * fix: swagger doesn't work for order-service.
 * Cascade update/delete inventory and product.
 * UI-Place Order: Pass logged-in user email in the payload to later use in kafka messages.
+* Kafka Schema Registry to generate OrderPlacedEvent using avro (timestamp 4:51:00)
